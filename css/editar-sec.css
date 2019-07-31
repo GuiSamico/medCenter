@@ -1,0 +1,125 @@
+body{
+    background-color:rgba(70, 140, 145, 0.699);
+}
+#d1{
+    width: 35em;
+}
+#d2{
+    width: 15em;
+}
+#d3{
+    width: 15em;
+    position: absolute;
+    margin-left: 320px;
+    margin-top: -75px;
+}
+#d4{
+    width: 12em;
+}
+#d5{
+    position: absolute;
+    margin-left: 320px;
+    margin-top: -75px;
+}
+#d6{
+    width: 35em;
+}
+#d7{
+    width: 10em;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 470px;
+    border: 2px solid;
+}
+ul{
+    margin-left: 85px;
+}
+div{
+    min-height: 50px;
+}
+.nav-link{
+    color: rgba(17, 15, 15, 0.753);
+}
+.nav-pills .nav-link.active{
+    background-color: #29a3a3;
+}
+.nav-link.active.show{
+    background-color: #29a3a3;
+    margin-left:100px;
+}
+.form-group{
+    margin: -5px;
+    min-width: 10px;
+    margin-bottom: -10px;
+    color: white;
+}
+label{
+    color: rgba(202, 202, 202, 0.795);
+}
+.form-control{
+    background:rgb(49, 47, 47);
+    padding:10px 0;
+    width:100%;
+    box-sizing:border-box;
+    box-shadow:none;
+    outline:none;
+    border:none;
+    border-bottom:2px solid #29a3a3;
+    -webkit-box-shadow: none;
+    color: white;
+}
+.form-control:focus{
+    background:rgb(49, 47, 47);
+    outline: none;
+    color: white;
+}
+#logo{
+    position: absolute;
+    top: -55px;
+    left: 20px;
+}
+#d8{
+    width: 35em;
+}
+#d9{
+    width: 35em;
+}
+#form{
+    width: 600px;
+    position: relative;
+    left: 280px;
+    top: 50px;
+    background:  rgb(49, 47, 47);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid rgba(39, 34, 34, 0.719);
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+}
+.titulo{
+    margin-left: -80px;
+    margin-top: 20px;
+}
+h3{
+    font-family: cursive;
+}
+#imgs1{
+    position: absolute;
+    width: 250px;
+    margin-left: -90px;
+    margin-top: 60px;
+}
+.imgs{
+    margin: 10px;
+}
+#imgs2{
+    position: absolute;
+    width: 250px;
+    margin-left: 915px;
+    margin-top: 100px;
+}
+.container{
+    height: 500px;
+}

@@ -1,0 +1,48 @@
+
+#logo{
+    position: relative;
+    top: -55px;
+    left: 20px;
+}
+#nav1 ul {
+    padding:5px 3px;
+    margin:0px;
+    background-color:rgb(70, 140, 145);
+    list-style:none;
+    width: 1590px;
+    height: 100px;
+    position: absolute;
+    right: 0px;
+    top: 3px;
+    left:5px;
+}
+#nav1 ul button {
+    display: inline;
+    margin-left: 80px;
+}
+#nav1 ul button a {
+    padding: 5px 3px;
+    display: inline-block;
+    /* visual do link */
+    background-color:rgb(70, 140, 145);
+    color: rgba(255, 253, 253, 0.801);
+    text-decoration: none;
+}
+#nav1 ul button a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    height: 100px;
+}
+.lista{
+    position:relative;
+    top:-85px;
+    margin:-60px;
+    left:300px;
+}
+.span{
+    position: relative;
+    float: left;
+    top: -25px;
+    color:#fff;
+}
+

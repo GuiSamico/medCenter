@@ -1,0 +1,172 @@
+body{
+    background-image:url(../img/gif1.gif);
+}
+::-webkit-scrollbar {
+    background: transparent;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgba(30, 100, 109, 0.534);
+}
+.container{
+    height: 500px;
+}
+.nav{
+    margin-bottom: 30px;
+}
+.btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-group + .btn-group {
+    margin-left: 0px;
+}
+
+.btn-group > .dropdown-menu {
+    list-style-type: none;
+    z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 680px;
+    padding: 4px 0;
+    margin-top: 3px;
+    min-width: 150px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.btn-group > .dropdown-menu li a {
+    display: block;
+    padding: 3px 12px;
+    text-decoration: none;
+}
+.dropdown{
+    border-radius: 5px;
+    left: 690px;
+    width: 145px;
+    height: 39px;
+    font-size: 17px;
+    background-color: transparent;
+    color: white;
+}
+#logo{
+    position: absolute;
+    top: -55px;
+    left: 20px;
+}
+#logoff{
+    position: absolute;
+    width: 35px;
+    right: 30px;
+    top: 25px;
+}
+.fixed-bg{
+    width: 82%;
+    position: fixed;
+    top: 25px;
+    z-index: 3000;
+}
+.fixed-bg .but, .dropdown{
+    position: relative;
+    left: 680px;
+}
+#formcons{
+    position: relative;
+    left: 0px;
+    top: 80px;
+    width: 500px;
+    background:  rgb(49, 47, 47);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid rgba(39, 34, 34, 0.719);
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 200px;
+}
+.messages{
+    position: absolute;
+    left: 700px;
+    top: 200px;
+    background:  rgb(49, 47, 47);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid rgba(39, 34, 34, 0.719);
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+}
+#formrealimed{
+    position: relative;
+    left: 0px;
+    top: 80px;
+    width: 500px;
+    background:  rgb(49, 47, 47);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid rgba(39, 34, 34, 0.719);
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+}
+#formrealipac{
+    position: relative;
+    left: 600px;
+    top: -760px;
+    width: 500px;
+    background:  rgb(49, 47, 47);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid rgba(39, 34, 34, 0.719);
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+}
+#formrealiconv{
+    position: relative;
+    left: 300px;
+    top: -600px;
+    width: 500px;
+    background:  rgb(49, 47, 47);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid rgba(39, 34, 34, 0.719);
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-control{
+    background:rgb(49, 47, 47);
+    width:100%;
+    box-sizing:border-box;
+    box-shadow:none;
+    outline:none;
+    border:none;
+    border-bottom:2px solid #29a3a3;
+    -webkit-box-shadow: none;
+    color: white;
+}
+.form-control:focus{
+    background:rgb(49, 47, 47);
+    outline: none;
+    color: white;
+}
+.sex{
+    color: rgba(202, 202, 202, 0.795);
+}
+label{
+    color: rgba(202, 202, 202, 0.795);
+}
+#title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #29a3a3;
+}

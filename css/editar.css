@@ -1,0 +1,72 @@
+body{
+    background-color:rgb(70, 140, 145);
+}
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.container{
+    height: 500px;
+    padding: 30px;
+}
+#formPaciente{
+    width: 500px;
+    margin-left:280px;
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.788);
+    box-shadow:20px 20px 50px 10px rgb(49, 47, 47);
+    padding: 20px;
+    border-radius: 15px;
+}
+#formMedico{
+    width: 500px;
+    margin-left:280px;
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.788);
+    box-shadow:20px 20px 50px 10px rgb(49, 47, 47);
+    padding: 20px;
+    border-radius: 15px;
+}
+#formConvenio{
+    width: 500px;
+    margin-left:280px;
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.788);
+    box-shadow:20px 20px 50px 10px rgb(49, 47, 47);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#formMarcacao{
+    width: 500px;
+    margin-left:280px;
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.788);
+    box-shadow:20px 20px 50px 10px rgb(49, 47, 47);
+    padding: 20px;
+    border-radius: 15px;
+}
+.btn{
+    margin-top: 20px;
+    margin-left: 250px;
+    border: 2px solid;
+}
+ul{
+    margin-left: 85px;
+}
+div{
+    min-height: 50px;
+}
+
+.form-group{
+    margin: -5px;
+    min-width: 10px;
+}
+label{
+    color: rgba(39, 34, 34, 0.719);
+}
+.form-control{
+    border-color: rgba(128, 128, 128, 0.411);
+    border-bottom-color: aqua;
+}

@@ -1,0 +1,28 @@
+body{
+    background-image:url(../img/gif1.gif);
+}
+h1{
+    margin-left: 200px;
+}
+#tabela_wrapper{
+    position: relative;
+    top: 100px;
+}
+.th{
+    color: white;
+    background-color: #005580;
+}
+button.botao{
+    position:fixed;
+    top: 30px;
+    left: 1170px;
+    padding:5px 5px;
+    border:2px solid #fff;
+    color:#fff;
+    background-color: #29a3a3;
+    border-radius:5px;
+}
+.iconop{
+    width: 30px;
+    margin-left: 25px;
+}

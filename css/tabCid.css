@@ -1,0 +1,8 @@
+body{
+    background:rgba(70, 140, 145, 0.699);
+}
+#tit{
+    position: relative;
+    top: 10px;
+    margin-bottom: 100px;
+}

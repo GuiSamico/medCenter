@@ -1,0 +1,29 @@
+body{
+    background-image:url(../img/gif1.gif);
+}
+::-webkit-scrollbar {
+    background: transparent;
+    height: 0px;
+}
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: rgba(30, 100, 109, 0.534);
+}
+.container{
+    height: 500px;
+}
+.nav{
+    margin-bottom: 30px;
+}
+#logo{
+    position: absolute;
+    top: -55px;
+    left: 20px;
+}
+.fixed-bg{
+    width: 82%;
+    position: fixed;
+    top: 25px;
+    left: 800px;
+    z-index: 3000;
+}

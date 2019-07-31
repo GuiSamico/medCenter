@@ -1,0 +1,17 @@
+#tabela_wrapper{
+    position: relative;
+    top: 130px;
+}
+.th{
+    color: white;
+    background-color: #005580;
+}
+.iconop{
+    width: 30px;
+    margin-left: 25px;
+}
+h2{
+    position: relative;
+    top: 100px;
+    left: 40%;
+}

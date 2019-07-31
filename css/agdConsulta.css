@@ -1,0 +1,63 @@
+body{
+    background-image:url(../img/gif1.gif);
+    overflow: hidden;
+}
+.container{
+    height: 500px;
+}
+#logo{
+    position: absolute;
+    top: -55px;
+    left: 20px;
+}
+#logoff{
+    position: relative;
+    left: 1050px;
+    width: 35px;
+}
+#formcons{
+    position: relative;
+    left: 0px;
+    top: 100px;
+    width: 500px;
+    background:  rgb(49, 47, 47);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid rgba(39, 34, 34, 0.719);
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+}
+.form-group .form-control{
+    background:rgb(49, 47, 47);
+    width:100%;
+    box-sizing:border-box;
+    box-shadow:none;
+    outline:none;
+    border:none;
+    border-bottom:2px solid #29a3a3;
+    -webkit-box-shadow: none;
+    color: white;
+}
+
+.form-group .form-control:focus{
+    background:rgb(49, 47, 47);
+    outline: none;
+    color: white;
+}
+label{
+    color: rgba(202, 202, 202, 0.795);
+}
+#title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #29a3a3;
+}
+.medicos{
+    position: relative;
+    top: -450px;
+    left: 550px;
+    width: 630px;
+}

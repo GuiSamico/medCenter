@@ -1,0 +1,83 @@
+body{
+    background-image:url(../img/gif1.gif);
+}
+#logo{
+    position: absolute;
+    top: -55px;
+    left: 20px;
+}
+.container{
+    height: 500px;
+    padding: 30px;
+}
+#form{
+    position: relative;
+    left: 280px;
+    top: 80px;
+    width: 500px;
+    background:  rgba(49, 47, 47, 0.589);
+    padding:40px;
+    box-shadow:0 5px 10px rgb(49, 47, 47);
+    border:1px solid whitesmoke;
+    box-sizing:border-box;
+    padding: 20px;
+    border-radius: 8px;
+}
+.notificacao-erro{
+    position: absolute;
+    right: 15px;
+}
+/* .btn{
+    margin-top: 20px;
+    margin-left: 400px;
+    border: 2px solid;
+} */
+/* .btn[type="submit"]{
+    border-bottom: none;
+    cursor:pointer;
+    background: #29a3a3;
+    color:#fff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+} */
+ul{
+    margin-left: 85px;
+}
+div{
+    min-height: 50px;
+}
+.nav-link{
+    color: whitesmoke;
+}
+.nav-pills .nav-link.active{
+    background-color: #007399;;
+}
+.nav-link.active.show{
+    background-color: #007399;
+}
+.form-group{
+    margin: -5px;
+    min-width: 10px;
+}
+label{
+    color: whitesmoke;
+}
+.form-control{
+    background:rgba(49, 47, 47, 0.014);
+    padding:10px 0;
+    margin-bottom:30px;
+    width:100%;
+    box-sizing:border-box;
+    box-shadow:none;
+    outline:none;
+    border:none;
+    border-bottom:2px solid #007399;
+    -webkit-box-shadow: none;
+    color: white;
+}
+
+.form-control:focus{
+    background:rgba(49, 47, 47, 0.589);
+    outline: none;
+    color: white;
+}
