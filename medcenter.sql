@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 22-Jun-2019 às 15:40
+-- Generation Time: 31-Jul-2019 às 22:56
 -- Versão do servidor: 5.7.26
 -- versão do PHP: 7.2.18
 
@@ -9091,23 +9091,24 @@ CREATE TABLE IF NOT EXISTS `consulta` (
   `data` varchar(10) NOT NULL,
   `hora` varchar(5) NOT NULL,
   PRIMARY KEY (`idcons`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `consulta`
 --
 
 INSERT INTO `consulta` (`idcons`, `paciente`, `medico`, `data`, `hora`) VALUES
-(1, 'Guilherme Silva Samico', 'Nicoly Corrêa Felix', '28/05/2019', '10:51'),
-(2, 'Irilene', 'Nicoly', '12/06/2019', '18:43'),
-(3, 'Jose Leonildo', 'Guilherme Silva', '12/06/2019', '18:43'),
-(4, 'Mariazinha', 'Jose', '13/06/2019', '19:30'),
-(5, 'Marcelo Alves', 'Guilherme Silva', '14/06/2019', '16:00'),
-(6, 'Maria Zenaide', 'Mathias Rodrigues', '14/06/2019', '15:00'),
-(7, 'Leticia Kamylla	', 'Guilherme Silva', '15/06/2019', '14:00'),
-(8, 'Wicaro Silva	', 'Guilherme Silva', '14/06/2019', '12:20'),
-(9, 'Jose Maria', 'Mathias Rodrigues', '18/06/2019', '15:00'),
-(10, 'Marcelo Alves', 'Guilherme Silva', '24/06/2019', '12:00');
+(12, 'Jubileu Silva', 'Guilherme Silva', '18/08/2019', '15:00'),
+(13, 'Jubileu Silva', 'Nicoly Felix', '11/08/2019', '20:00'),
+(14, 'Jubileu Silva', 'Josenildo Lima', '12/04/2019', '08:00'),
+(15, 'Marcelo Alves', 'Guilherme Silva', '15/08/2019', '14:30'),
+(16, 'Marcelo Alves', 'Mathias Rodrigues', '12/04/2020', '15:00'),
+(17, 'Marcelo Alves', 'Nicoly Felix', '15/11/2019', '15:00'),
+(18, 'Marcelo Alves', 'Josenildo Lima', '14/02/2020', '14:00'),
+(19, 'Rennan Souza', 'Guilherme Silva', '14/12/2019', '15:00'),
+(20, 'Rennan Souza', 'Mathias Rodrigues', '15/08/2019', '12:45'),
+(21, 'Rennan Souza', 'Nicoly Felix', '12/04/2020', '18:00'),
+(22, 'Rennan Souza', 'Josenildo Lima', '12/08/2019', '14:00');
 
 -- --------------------------------------------------------
 
@@ -9122,9 +9123,9 @@ CREATE TABLE IF NOT EXISTS `convenio` (
   `telefone` varchar(15) NOT NULL,
   `endereco` varchar(50) NOT NULL,
   `cnpj` varchar(20) NOT NULL,
-  `planos` varchar(30) NOT NULL,
+  `planos` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`idconv`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `convenio`
@@ -9132,8 +9133,25 @@ CREATE TABLE IF NOT EXISTS `convenio` (
 
 INSERT INTO `convenio` (`idconv`, `nome`, `telefone`, `endereco`, `cnpj`, `planos`) VALUES
 (6, 'Hapvida', '(85) 99291-2047', 'Rua Alfredo Salgado', '11.572.217/0001-92', 'Odontologia'),
-(10, 'Amil', '(54) 15641-5614', 'Leste Oeste', '56.415.646/5416-54', 'Dermatologia, urologia'),
-(11, 'Amil', '(15) 45415-2131', 'Leste Oeste', '21.564.789/4513-21', 'Varios');
+(10, 'Amil', '(12) 34567-8900', 'Centro de Fortaleza', '12.345.678/9123-46', 'Dermatologia, urologia e ginecologia'),
+(12, 'Bradesco', '(85) 98458-7744', 'Rua Sao Paulo', '02.515.415/4545-45', 'Psiquiatria e ortopedia'),
+(13, 'Unimed', '(85) 98956-7854', '13 de maio', '45.478.555/5474-89', 'Cardiologia, Pediatria e Oftamologia');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `diagnostico`
+--
+
+DROP TABLE IF EXISTS `diagnostico`;
+CREATE TABLE IF NOT EXISTS `diagnostico` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `paciente` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `sintoma` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `doenca` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `data` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -9145,6 +9163,7 @@ DROP TABLE IF EXISTS `medico`;
 CREATE TABLE IF NOT EXISTS `medico` (
   `idmed` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(30) NOT NULL,
+  `horario` varchar(50) NOT NULL,
   `cpf` varchar(15) NOT NULL,
   `rg` varchar(15) NOT NULL,
   `crm` varchar(15) NOT NULL,
@@ -9153,16 +9172,17 @@ CREATE TABLE IF NOT EXISTS `medico` (
   `sexo` varchar(10) DEFAULT NULL,
   `senha` varchar(32) NOT NULL,
   PRIMARY KEY (`idmed`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `medico`
 --
 
-INSERT INTO `medico` (`idmed`, `nome`, `cpf`, `rg`, `crm`, `telefone`, `endereco`, `sexo`, `senha`) VALUES
-(2, 'Guilherme Silva', '083.806.813-80', '2008437079-8', '645641521', '(85) 98533-5871', 'Tomas Gonzaga', 'masculino', '1f49dadf508614444ad857b3746392e7'),
-(6, 'Mathias Rodrigues', '541.564.165-41', '6416354154-1', '63415416', '(54) 15641-6541', 'Marcilio dias', 'masculino', '5b3a3152bc39edb7289f5b96480feb8d'),
-(7, 'Nicoly Felix', '123.456.789-00', '1234567890-0', '156548815', '(85) 98574-7485', 'Leste Oeste', 'feminino', '8fe569676dca2e21fed65144d1c68428');
+INSERT INTO `medico` (`idmed`, `nome`, `horario`, `cpf`, `rg`, `crm`, `telefone`, `endereco`, `sexo`, `senha`) VALUES
+(2, 'Guilherme Silva', 'seg a sex, 7h - 12h', '083.806.813-80', '2008437079-8', '645641521', '(85) 98533-5871', 'Tomas Gonzaga', 'masculino', '1f49dadf508614444ad857b3746392e7'),
+(6, 'Mathias Rodrigues', 'seg a sex, 12h - 17h', '541.564.165-41', '6416354154-1', '63415416', '(54) 15641-6541', 'Marcilio dias', 'masculino', '5b3a3152bc39edb7289f5b96480feb8d'),
+(7, 'Nicoly Felix', 'seg a sex, 17h - 22h', '123.456.789-00', '1234567890-0', '156548815', '(85) 98574-7485', 'Leste Oeste', 'feminino', '8fe569676dca2e21fed65144d1c68428'),
+(8, 'Josenildo Lima', 'seg a qua, 8h - 15h', '123.456.789-00', '1234567890-0', '147852', '(12) 34567-8900', 'Subindo a rua', 'masculino', '98dae0e08c01f9e64dc3f9650eb5a714');
 
 -- --------------------------------------------------------
 
@@ -9178,7 +9198,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `data` varchar(10) NOT NULL,
   `hora` varchar(5) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=29 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -9204,9 +9224,9 @@ CREATE TABLE IF NOT EXISTS `paciente` (
 --
 
 INSERT INTO `paciente` (`idpac`, `nome`, `endereco`, `telefone`, `cpf`, `rg`, `sexo`, `convenio`) VALUES
-(4, 'Rennan', 'Naquela rua', '(87) 87879-7487', '847.897.498-74', '8748947864-8', 'masculino', 'Hapvida'),
-(5, 'Marcelo Alves', 'Alves de Lima', '(85) 98564-7894', '083.806.813-80', '16483808-9', 'masculino', 'Hapvida'),
-(10, 'Jubileu Silva', 'Na rua de cima', '(15) 45212-3418', '455.465.489-46', '5464168415-6', 'masculino', 'Amil');
+(4, 'Rennan Souza', 'Na proxima rua', '(87) 87879-7487', '847.897.498-74', '8748947864-8', 'masculino', 'Amil'),
+(10, 'Jubileu Silva', 'Descendo a rua', '(45) 45454-5454', '454.545.454-54', '4545454545-4', 'masculino', 'Hapvida'),
+(11, 'Givanildo Goes', 'Depois do sol', '(51) 56451-3545', '564.165.413-21', '1234165464-1', 'masculino', 'Hapvida');
 
 -- --------------------------------------------------------
 
@@ -9225,7 +9245,7 @@ CREATE TABLE IF NOT EXISTS `secretaria` (
   `sexo` varchar(10) DEFAULT NULL,
   `senha` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`idsec`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `secretaria`
@@ -9240,7 +9260,8 @@ INSERT INTO `secretaria` (`idsec`, `nome`, `cpf`, `rg`, `telefone`, `endereco`, 
 (19, 'Guilherme Silva', '083.806.813-80', '2008437079-8', '(85) 98533-5871', 'Tomas Gonzaga, 767', 'masculino', '1f49dadf508614444ad857b3746392e7'),
 (20, 'Thais Agostinho', '145.678.945-64', '4567489456-1', '(45) 67489-4615', 'Rua da esmalteria', 'feminino', '6ebe76c9fb411be97b3b0d48b791a7c9'),
 (22, 'Juremilda Souza', '054.784.756-12', '3545641321-3', '(52) 12345-6413', 'Na rua virando a direita', 'feminino', '48e332a8f565c33153f02cfe0fab5f00'),
-(23, 'Leticia Dias', '554.555.555-55', '5555555555-5', '(46) 84765-4564', 'Perto da barra', 'feminino', '98dae0e08c01f9e64dc3f9650eb5a714');
+(24, 'Nicoly Felix', '147.585.236-46', '5487842513-5', '(85) 95748-7854', 'Presidente Castelo Branco', 'feminino', '819fd1b4545602e20a17262c87717832'),
+(25, 'Leticia Dias', '555.555.555-55', '5555555555-5', '(55) 55555-5555', 'Vila do mar', 'feminino', 'bd337fe662fa07f17e5561f976d0af22');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
