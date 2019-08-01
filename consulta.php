@@ -50,11 +50,37 @@
             <p style="color:white;font-size:20px; float:left; margin-left:30px;"><?php echo $row['sexo']; ?></p>
             <p style="color:white;font-size:20px; float:left; margin-left:30px;"><?php echo $row['convenio']; ?></p>
             <p style="color:white;font-size:20px; float:left; margin-left:30px;"><?php echo $row2['planos']; ?></p>
-            <div class="sintomas" style="position:relative; left:250px; top:30px;">
-                <p style="color:white;font-size:30px;">Sintomas</p>
-                <textarea name="sintomas" rows="8" cols="80"></textarea>
-            </div>
 
+            <a href="diagnosticos_antigos.php?nome=<?php echo $nomePaciente?>" style="margin-top:40px;margin-left:430px;"><button type="button" class="btn btn-light">Diagnósticos cadastrados</button></a>
+
+            <div class="infor_consulta">
+                <form action="cad-diagnostico.php" method="POST" name="formCadDiagnostico" id="formCadDiagnostico">
+
+                        <div class="form-group">
+                            <label for="paciente">Paciente</label>
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" class="form-control" name="paciente" id="paciente" autocomplete="off" value="<?php echo $nomePaciente?>">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sintoma">Sintomas</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="sintoma" id="sintoma" rows="5" cols="80"></textarea>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="doenca">Doenças</label>
+                        </div>
+                        <div class="form-group">
+                            <input required type="text" class="form-control" name="doenca" id="doenca" autocomplete="off">
+                        </div>
+
+                    <button type="submit" class="btn btn-info" name="btn_cad_sec">Cadastrar</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>

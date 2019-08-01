@@ -22,8 +22,21 @@ body{
 }
 .fixed-bg{
     width: 82%;
-    position: fixed;
+    position: absolute;
     top: 25px;
     left: 800px;
     z-index: 3000;
+}
+.infor_consulta{
+    width: 500px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgb(136, 189, 182);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 300px;
+}
+.infor_consulta label{
+    font-size: 17px;
+    margin-bottom: -7px;
 }
